@@ -155,8 +155,6 @@ h1,h2{
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(3,1fr);
-    
-
 }
 .int-img
 {
@@ -224,4 +222,65 @@ h1,h2{
 
 .zoom-effect:hover .card-img-top {
     transform: scale(1.1);
+}
+
+@media (max-width:576px) 
+{
+    .title img
+    {
+        object-fit: fill;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    
+    .carousel-item {
+        height: 200px; 
+        width: 100%; 
+    }
+    .int-title img
+    {
+        object-fit: fill;
+
+    }
+    .isl-title img
+    {
+        object-fit: fill;
+    }
+    .isl-title h1
+    {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 650px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 50px;
+    }
+    .int-title
+    {
+    position: relative;
+    }
+    .int-title h1 {
+        position: absolute;
+        font-family: serif;
+        font-size: small;
+        top: 650px; 
+        left: 10px; 
+        color: white; 
+        text-align:start; 
+        font-size: 50px; 
+    }
+
+    .int-container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
