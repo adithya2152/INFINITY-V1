@@ -159,6 +159,8 @@ h1,h2{
 .int-img
 {
     position: relative;
+    width: 400px;
+    height: 300px;
 }
 
 .int-img img
